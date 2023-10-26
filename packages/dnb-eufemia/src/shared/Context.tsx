@@ -50,6 +50,7 @@ import type { FormElementProps } from './helpers/filterValidProps'
 import type { ThemeProps } from './Theme'
 import type { FormsTranslation } from '../extensions/forms/hooks/useTranslation'
 import type { DeepPartial } from './types'
+import { DatePickerProps } from '../components/DatePicker'
 
 export type ContextComponents = {
   Button?: Partial<ButtonProps>
@@ -84,6 +85,7 @@ export type ContextComponents = {
   Input?: Partial<InputProps>
   ProgressIndicator?: Partial<ProgressIndicatorProps>
   FormStatus?: Partial<FormStatusProps>
+  DatePicker?: Partial<DatePickerProps>
 
   // -- TODO: Not converted yet --
   NumberFormat?: Record<string, unknown>
