@@ -32,7 +32,7 @@ export const LogoInheritSizeExample = () => (
 export const LogoInheritColorExample = () => (
   <ComponentBox data-visual-test="logo-inherit-color">
     <span style={{ color: 'tomato' }}>
-      <Logo height="96" inherit_color />
+      <Logo height="96" inheritColor />
     </span>
   </ComponentBox>
 )

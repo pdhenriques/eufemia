@@ -7,6 +7,7 @@ import React from 'react'
 import { Wrapper, Box } from 'storybook-utils/helpers'
 
 import { Logo } from '../..'
+import { Theme } from '../../../shared'
 
 export default {
   title: 'Eufemia/Components/Logo',
@@ -65,6 +66,52 @@ export const LogoSandbox = () => {
         <Logo color="var(--color-accent-yellow)" />
         <Logo color="var(--color-indigo)" />
         <Logo color="var(--color-violet)" />
+      </Box>
+      <Box>
+        <>
+          {[...Array(10)].map((_, i) => {
+            return <Logo key={i} height={`${(i + 1) * 1.2}rem`} />
+          })}
+        </>
+      </Box>
+      <Box>
+        {/* <Logo width={'5rem'} brand="sbanken" /> */}
+        <br />
+        {/* <Logo width={'2rem'} /> */}
+        <br />
+        {/* <Logo height={'5rem'} /> */}
+        <br />
+        {/* <Logo height={'2rem'} /> */}
+        <br />
+        <Logo size={'5rem'} />
+        <br />
+        {/* <Logo size={'auto'} /> */}
+        <br />
+        <span style={{ height: '5rem' }}>
+          <Logo size="inherit" />
+        </span>
+        <br />
+      </Box>
+      <Box>
+        Theme sbanken
+        <Theme name="sbanken">
+          <Logo height="5rem" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Logo height="5rem" variant="compact" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Logo height="10rem" variant="compactHorizontal" />
+          <Logo size="1200" variant="compactHorizontal" />
+          <Logo height="120" variant="compactHorizontal" />
+          <Logo width="205.8333" variant="compactHorizontal" />
+        </Theme>
       </Box>
     </Wrapper>
   )

@@ -18,7 +18,7 @@ import {
   createSpacingClasses,
 } from '../space/SpacingHelper'
 
-export default class Logo extends React.PureComponent {
+class Logo extends React.PureComponent {
   static contextType = Context
 
   static propTypes = {
