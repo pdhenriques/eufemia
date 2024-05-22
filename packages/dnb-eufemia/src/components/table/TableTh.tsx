@@ -34,6 +34,11 @@ export type TableThProps = {
   noWrap?: boolean
 
   /**
+   * The width of the table column as a percentage when the table is fixed.
+   */
+  width?: `${number}%`
+
+  /**
    * The content of the table header given as Tr.
    */
   children?: TableThChildren | Array<TableThChildren>
